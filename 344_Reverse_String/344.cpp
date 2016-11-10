@@ -6,10 +6,10 @@ using namespace std;
 class Solution {
 public:
     string reverseString(string s) {
-    	string t;
+    	string t = "";
     	int strlen = s.length();
     	for(int i = 0; i < strlen; i++){
-    		t.at(i) = s.at(strlen - i);
+    		t.push_back(s.at(strlen - i - 1));
     	}
         return t;
     }
